@@ -1,12 +1,23 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
+// src/app/page.tsx
+import CTA from "@/components/landing/CTA";
+import Footer from "@/components/landing/Footer";
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import HowItWorks from "@/components/landing/HowItWorks";
+import PricingSection from "@/components/landing/PricingSection";
+import WhatToAsk from "@/components/landing/WhatToAsk";
+export default async function Home() {
+ 
 
-export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <SignUpButton mode="modal">sign up</SignUpButton>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
+    </div>
   );
 }
