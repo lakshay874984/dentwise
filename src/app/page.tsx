@@ -13,6 +13,7 @@ export default async function Home() {
     <div className="min-h-screen bg-background">
       <Header />
       <Hero />
+      
       <HowItWorks />
       <WhatToAsk />
       <PricingSection />
