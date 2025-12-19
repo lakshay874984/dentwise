@@ -1,0 +1,32 @@
+..........
+Auth object example without Active Organization    auth()
+{
+  sessionId: 'sess_123',
+  userId: 'user_123',
+  orgId: null,
+  orgRole: null,
+  orgSlug: null,
+  orgPermissions: null,
+  has: [Function (anonymous)],
+  getToken: [AsyncFunction (anonymous)],
+  claims: {
+    azp: 'http://localhost:3000',
+    exp: 1666622607,
+    iat: 1666622547,
+    iss: 'https://renewing-bobcat-00.clerk.accounts.dev',
+    nbf: 1666622537,
+    sid: 'sess_123',
+    sub: 'user_123',
+  },
+}
+.........
+Example: Using has()
+Use the has() method to test if the user has access to a Plan:
+
+
+const hasPremiumAccess = has({ plan: 'gold' })
+
+Or a Feature:
+
+
+const hasPremiumAccess = has({ feature: 'widgets' })
