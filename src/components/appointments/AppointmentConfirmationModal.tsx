@@ -28,7 +28,7 @@ export function AppointmentConfirmationModal({
 }: AppointmentConfirmationModalProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md max-h-screen ">
         <DialogHeader className="text-center space-y-4">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
             <CheckCircleIcon className="h-8 w-8 text-primary" />
