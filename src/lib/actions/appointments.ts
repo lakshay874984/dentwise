@@ -11,7 +11,7 @@ function transformAppointment(appointment: any) {
     patientEmail: appointment.user.email,
     doctorName: appointment.doctor.name,
     doctorImageUrl: appointment.doctor.imageUrl || "",
-    date: appointment.date.toISOString().split("T")[0],
+    date: appointment.date.toISOString().split("T")[0], // 
   };
 }
 
